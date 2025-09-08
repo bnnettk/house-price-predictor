@@ -140,6 +140,12 @@ jobs:
       - name: Download trained model
         uses: actions/download-artifact@v4
         with:
+          name: trained-model
+          path: models/
+
+      - name: Download preprocessor
+        uses: actions/download-artifact@v4
+        with:
           name: preprocessor
           path: models/trained/
 
